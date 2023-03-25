@@ -67,23 +67,18 @@ body {
   color: var(--primary-text-color);
 }
 
-.container {
+/* .container {
   width: 1158px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
+} */
 
-.section {
+/* .section {
   padding-top: 120px;
   padding-bottom: 120px;
-}
-/* нижнэ пiдкреслення при наведеннi
-.link:hover, */
-/* .link:focus { */
-/* text-decoration: underline; */
-/* } */
+} */
 
 /* =================Components================= */
 
@@ -139,7 +134,38 @@ body {
 /* ====================/Components==================== */
 
 /* ===================Header========================== */
-.page-header {
+/* Mobail */
+.container {
+  width: 428px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media screen  and (min-width: 428px) {
+  .container {
+    width: 428px;
+    background-color: tomato;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    background-color: #4d5ae5;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    background-color: #4de591;
+  }
+}
+  
+
+
+/* .page-header {
   background: var(--primary-background-color);
   border-bottom: var(--border-header-color);
 }
@@ -240,7 +266,7 @@ body {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--pressed-color);
-}
+} */
 /* ===========/Header============*/
 
 /* ============Hero============== */
