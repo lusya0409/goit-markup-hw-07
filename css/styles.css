@@ -136,44 +136,95 @@ body {
 /* ===================Header========================== */
 /* Mobail */
 .container {
-  width: 428px;
-  padding-left: 16px;
-  padding-right: 16px;
+/* width: 428px; */
+padding-left: 16px;
+padding-right: 16px;
+margin-left: auto;
+margin-right: auto;
 }
-
-@media screen  and (min-width: 428px) {
+@media screen  and (min-width: 480px) {
   .container {
     width: 428px;
     background-color: tomato;
   }
 }
 
-
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    background-color: #4d5ae5;
+    background-color: violet;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  
     background-color: #4de591;
   }
 }
-  
 
-
-/* .page-header {
+.page-header {
   background: var(--primary-background-color);
   border-bottom: var(--border-header-color);
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+  
+  .contact {
+    display: none;
+  }
 }
 
 .page-header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
+
+.logo {
+  /* margin-right: 76px; */
+
+  font-family: var(--secondary-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-brand-color);
+}
+
+.logo-studio {
+  color: var(--secondary-text-color);
+}
+
+.mobile-menu-open {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  line-height: 0;
+}
+
+.mobile-menu-icon {
+  display: block;
+  stroke: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-open {
+    display: none;
+  }
+}
+/* 
+
 
 .page-nav {
   display: flex;
@@ -212,7 +263,7 @@ body {
   font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
