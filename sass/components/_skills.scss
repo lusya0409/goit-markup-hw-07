@@ -1,0 +1,22 @@
+.section {
+    @extend %section;
+}
+.visually-hidden {
+    @extend %visually-hidden;
+}
+.skill-content {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.icon-skill-container {
+    @include centeredFlex();
+    height: 112px;
+    margin-bottom: 8px;
+    background-color: $secondory-backgound-color;
+    border-radius: 4px;
+}
+
+.icon-skill {
+    width: 64px;
+    height: 64px;
+}

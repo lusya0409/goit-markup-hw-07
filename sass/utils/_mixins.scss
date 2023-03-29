@@ -1,0 +1,33 @@
+//@include имя Добавляем свойства записанные в mixin к селектору
+@mixin centeredFlex($type: flex) {
+    display: $type;
+    align-items: center;
+    justify-content: center;
+}
+// p {
+//     @include centeredFlex();
+// }
+
+// div {
+//     @include centeredFlex();
+// }
+
+//Для каждого значения в списке применить следующие значения
+
+$icons: 'facebook', 'github', 'linkedin', 'twitter';
+// @each $iconName in $icons {
+//     .icon-#{$iconName} {
+//         background-image: url("../../images/#{$iconName}.svg");
+//     }
+// }
+
+//Лучше через mixin
+// @mixin generateIcons($iconList) {
+//     @each $iconName in $icons {
+//         .icon-#{$iconName} {
+//             background-image: url("../../images/#{$iconName}.svg");
+//         }
+//     }
+
+// }
+// @include generateIcons($icons);

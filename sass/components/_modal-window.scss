@@ -1,0 +1,218 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(46, 47, 66, 0.4);
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.is-hidden {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transform: scale(0.5);
+        .modal {
+            transform: translate(-50%, -50%) scale(0.5);
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+        }
+    }
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    max-width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px;
+
+    background-color: #fcfcfc;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+
+    background-color: $close-modal-background-color;
+    border: $border-close-modal-btn;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+        background-color: $primary-brand-color;
+    }
+}
+
+.modal-close-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .modal-close-btn:hover &,
+    .modal-close-btn:focus & {
+        fill: $primary-background-color;
+    }
+}
+
+// .modal-close-btn:hover .modal-close-icon,
+// .modal-close-btn:focus .modal-close-icon {
+//     fill: $primary-background-color;
+// }
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form-text {
+    margin-bottom: 16px;
+
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+
+    color: $dark-background-color;
+}
+
+.modal-form-field {
+    margin-bottom: 8px;
+}
+
+.modal-form-input-desc {
+    display: block;
+    margin-bottom: 8px;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+
+    color: $border-icon-client-color;
+}
+
+.modal-form-input,
+.modal-form-message {
+    width: 100%;
+    padding: 8px 16px 8px 38px;
+
+    color: $secondary-text-color;
+    border: 1px solid rgba(46, 47, 66, 0.2);
+    border-radius: 4px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus {
+        border-color: $primary-brand-color;
+        outline: none;
+    }
+}
+
+.modal-form-message {
+    height: 120px;
+    resize: none;
+    padding-left: 16px;
+    margin-bottom: 16px;
+
+    &::placeholder {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+    }
+}
+
+.modal-form-input-container {
+    position: relative;
+    display: block;
+}
+
+.modal-form-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: $dark-background-color;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .modal-form-input:focus+& {
+        fill: $primary-brand-color;
+    }
+}
+
+.user-policy-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.modal-form-check-desc {
+    position: relative;
+    display: block;
+    padding-left: 24px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: $border-icon-client-color;
+}
+
+.modal-form-check {
+    @extend %visually-hidden;
+}
+
+.modal-form-icon-check {
+    position: absolute;
+    fill: transparent;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid $dark-background-color;
+    border-radius: 2px;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    .modal-form-check:checked + & {
+        background-color: $pressed-color;
+        border: 1px solid $border-work-link-pressed-color;
+    }
+}
+
+.modal-form-check-link {
+    color: $primary-brand-color;
+}
+
+.modal-form-submit {
+    min-width: 169px;
+    padding: 16px 32px;
+    align-self: center;
+
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: $dark-theme-text-color;
+    background-color: $primary-brand-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover, &:focus {
+        background-color: $pressed-color;
+    }
+}
+

@@ -1,0 +1,40 @@
+.section {
+    @extend %section;
+
+    &-customers {
+        padding-top: 130px;
+    }
+}
+// .container {
+//     @extend %container;
+    
+//     &-tablet {
+//         width: 768px;
+//     }
+// }
+.list-customers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-icon-client {
+    @include centeredFlex();
+    width: 168px;
+    height: 88px;
+
+    background-color: $primary-background-color;
+    border: 1px solid $border-icon-client-color;
+    border-radius: 4px;
+    fill: $border-icon-client-color;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-color: $pressed-color;
+        fill: $pressed-color;
+    }
+
+}
+

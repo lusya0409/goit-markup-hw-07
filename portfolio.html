@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
   </head>
   <body>
     <!-- Header -->
@@ -23,35 +23,93 @@
     <header class="page-header">
       <div class="container page-header-container">
         <nav class="page-nav">
-          <a class="logo link" href="./index.html"
-            >Web<span class="logo-studio">Studio</span></a
-          >
+          <a class="logo link" href="./index.html">Web<span class="logo-studio">Studio</span></a>
           <ul class="menu list">
             <li class="menu-item">
               <a class="menu-link link" href="./index.html">Studio</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link current link" href="./portfolio.html"
-                >Portfolio</a
-              >
+              <a class="menu-link current link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="menu-item">
               <a class="menu-link link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
+        <button class="mobile-menu-open js-open-menu" type="button">
+          <svg class="mobile-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
         <ul class="contact list">
           <li class="contact-item">
-            <a class="contact-link link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+            <a class="contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
           <li class="contact-item">
-            <a class="contact-link link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
+            <a class="contact-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
           </li>
         </ul>
+      </div>
+    
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu-container">
+          <button type="button" class="mobile-close-btn js-close-menu">
+            <svg class="icon-modal-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-list list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link current link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+          <ul class="mobile-contact list">
+            <li class="mobile-contact-item">
+              <a class="mobile-contact-link contact-link-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+    
+            <li class="mobile-contact-item">
+              <a class="mobile-contact-link contact-link-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+    
+          <ul class="list mobile-list-icon-social">
+            <li class="mobile-item-icon-social">
+              <a href="" class="link mobile-link-icon-social" aria-label="Instagram">
+                <svg class="icon-social">
+                  <use href=".//images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-item-icon-social">
+              <a href="" class="link mobile-link-icon-social" aria-label="Twitter">
+                <svg class="icon-social">
+                  <use href=".//images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-item-icon-social">
+              <a href="" class="link mobile-link-icon-social" aria-label="Facebook">
+                <svg class="icon-social">
+                  <use href=".//images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-item-icon-social">
+              <a href="" class="link mobile-link-icon-social" aria-label="Linkedin">
+                <svg class="icon-social">
+                  <use href=".//images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -85,7 +143,7 @@
               <a class="work-link link" href="">
                 <div class="work-carg-img">
                   <img
-                    src="./images/portfolio/banking-app.jpg"
+                    src=".//images/portfolio/banking-app.jpg"
                     alt="Banking App Interface Concept"
                     width="360"
                   />
@@ -108,7 +166,7 @@
               <a class="work-link link" href="">
                 <div class="work-carg-img">
                   <img
-                    src="./images/portfolio/cashless-payment.jpg"
+                    src=".//images/portfolio/cashless-payment.jpg"
                     alt="Cashless Payment"
                     width="360"
                   />
@@ -129,7 +187,7 @@
               <a class="work-link link" href="">
                 <div class="work-carg-img">
                   <img
-                    src="./images/portfolio/meditaion-app.jpg"
+                    src=".//images/portfolio/meditaion-app.jpg"
                     alt="Meditaion App"
                     width="360"
                   />
@@ -150,7 +208,7 @@
               <a class="work-link link" href="">
                 <div class="work-carg-img">
                   <img
-                    src="./images/portfolio/taxi-service.jpg"
+                    src=".//images/portfolio/taxi-service.jpg"
                     alt="Taxi Service"
                     width="360"
                   />
@@ -170,7 +228,7 @@
               <a class="work-link link" href="">
                 <div class="work-carg-img">
                   <img
-                    src="./images/portfolio/screen-illustrations.jpg"
+                    src=".//images/portfolio/screen-illustrations.jpg"
                     alt="Screen Illustrations"
                     width="360"
                   />
@@ -191,7 +249,7 @@
               <a class="work-link link" href="">
                 <div class="work-carg-img">
                   <img
-                    src="./images/portfolio/online-courses.jpg"
+                    src=".//images/portfolio/online-courses.jpg"
                     alt="Online Courses"
                     width="360"
                   />
@@ -212,7 +270,7 @@
               <a class="work-link link" href="">
                 <div class="work-carg-img">
                   <img
-                    src="./images/portfolio/instagram-stories-concept.jpg"
+                    src=".//images/portfolio/instagram-stories-concept.jpg"
                     alt="Instagram Stories Concept"
                     width="360"
                   />
@@ -233,7 +291,7 @@
               <a class="work-link link" href="">
                 <div class="work-carg-img">
                   <img
-                    src="./images/portfolio/organic-food.jpg"
+                    src=".//images/portfolio/organic-food.jpg"
                     alt="Organic Food"
                     width="360"
                   />
@@ -254,7 +312,7 @@
               <a class="work-link link" href="">
                 <div class="work-carg-img">
                   <img
-                    src="./images/portfolio/fresh-coffee.jpg"
+                    src=".//images/portfolio/fresh-coffee.jpg"
                     alt="Fresh Coffee"
                     width="360"
                   />
@@ -279,9 +337,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-container-logo">
-          <a class="logo link" href="./index.html"
-            >Web<span class="logo-studio">Studio</span></a
-          >
+          <a class="logo link" href="./index.html">Web<span class="logo-studio">Studio</span></a>
           <p class="section-description">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
@@ -293,49 +349,43 @@
             <li class="item-icon-social">
               <a href="" class="link link-icon-social" aria-label="Instagram">
                 <svg class="icon-social">
-                  <use href="./images/icons.svg#icon-instagram"></use>
+                  <use href=".//images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="item-icon-social">
               <a href="" class="link link-icon-social" aria-label="Twitter">
                 <svg class="icon-social">
-                  <use href="./images/icons.svg#icon-twitter"></use>
+                  <use href=".//images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="item-icon-social">
               <a href="" class="link link-icon-social" aria-label="Facebook">
                 <svg class="icon-social">
-                  <use href="./images/icons.svg#icon-facebook"></use>
+                  <use href=".//images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="item-icon-social">
               <a href="" class="link link-icon-social" aria-label="Linkedin">
                 <svg class="icon-social">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
+                  <use href=".//images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-
+    
         <form class="footer-form">
           <label class="footer-form-field">
             <span class="footer-form-input-desk">Subscribe</span>
-            <input
-              type="email"
-              name="user-email"
-              class="footer-form-input"
-              required
-              placeholder="E-mail"
-            />
+            <input type="email" name="user-email" class="footer-form-input" required placeholder="E-mail" />
           </label>
           <button type="submit" class="footer-form-submit">
             Subscribe
             <svg class="footer-form-btn-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-click"></use>
+              <use href=".//images/icons.svg#icon-click"></use>
             </svg>
           </button>
         </form>

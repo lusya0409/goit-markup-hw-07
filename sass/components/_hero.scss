@@ -1,0 +1,59 @@
+// button {
+//     @include centeredFlex(inline-flex);
+// }
+
+// h1 {
+//     @include centeredFlex();
+// }
+.hero {
+    max-width: 1440px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url("../../images/people-office.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    background-color: $dark-background-color;
+        
+    &-container {
+            padding: 188px 0;
+            text-align: center;
+        }
+}
+
+.main-title {
+    width: 496px;
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.modal-btn {
+    padding: 16px 32px;
+    gap: 10px;
+
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    color: $dark-theme-text-color;
+    background-color: $primary-brand-color;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover, &:focus {
+            background-color: $pressed-color;
+        }
+}
+
+

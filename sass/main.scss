@@ -1,0 +1,64 @@
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/mixins';
+@import './components/header';
+@import './components/hero';
+@import './components/skills';
+@import './components/doings';
+@import './components/team';
+@import './components/customers';
+@import './components/portfolio';
+@import './components/footer';
+@import './components/modal-window';
+
+
+// $color: #00ff15;
+
+// body {
+//     background-color: $color;
+// }
+
+// .section {
+//     color: aqua;
+
+//     .title {
+//         color: brown;
+//     }
+//         .text {
+//             color: blue;
+//         }
+// }
+// .section {
+//     color: aqua;
+
+//     &-title {
+//         color: brown;
+//     }
+
+//     &-text {
+//         color: blue;
+//     }
+// }
+// .box {
+//     background-color: red;
+
+// }
+// // .box:hover .button
+
+// .button {
+//     background-color: teal;
+
+//     &:hover, &:focus {
+//         color: black;
+//     }
+//     .box:hover & {
+//         color: orange;
+//     }
+// }
+// p {
+//     @include centeredFlex();
+// }
+
+// div {
+//     @include centeredFlex();
+// }
