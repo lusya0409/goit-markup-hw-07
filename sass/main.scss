@@ -1,7 +1,8 @@
 @import './utils/variables';
 @import './utils/placeholders';
 @import './utils/mixins';
-@import './components/header';
+@import './components/header-tablet-desktop';
+@import './components/header-mobail';
 @import './components/hero';
 @import './components/skills';
 @import './components/doings';
@@ -10,7 +11,6 @@
 @import './components/portfolio';
 @import './components/footer';
 @import './components/modal-window';
-
 
 // $color: #00ff15;
 

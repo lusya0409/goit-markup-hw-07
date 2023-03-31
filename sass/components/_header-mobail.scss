@@ -1,0 +1,216 @@
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+
+  .contact {
+    display: none;
+  }
+  .mobile-menu-open {
+    padding: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border: none;
+    background-color: transparent;
+    line-height: 0;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    stroke: currentColor;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    max-height: 796px;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: $primary-background-color;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .mobile-menu-container {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    padding-right: 35px;
+  }
+  .mobile-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+
+    background-color: $close-modal-background-color;
+    border: $border-close-modal-btn;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &-focus {
+      background-color: $primary-brand-color;
+    }
+  }
+
+  .icon-modal-close {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .modal-close-btn:hover &,
+    .modal-close-btn:focus & {
+      fill: $primary-background-color;
+    }
+  }
+
+  .mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .mobile-menu-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
+    color: $secondary-text-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $pressed-color;
+    }
+  }
+
+  .mobile-menu-link.current {
+    color: $pressed-color;
+  }
+  .mobile-wraper-lists-media {
+    max-width: 100%;
+  }
+  .mobile-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-bottom: 48px;
+
+    gap: 40px;
+  }
+
+  .contact-link-tel {
+    display: block;
+    max-width: 353px;
+    width: 100%;
+
+    font-weight: 700;
+    font-size: 36px;
+    @media screen and (max-width: 428px) {
+      font-size: 28px;
+      white-space: nowrap;
+    }
+
+    line-height: 1.11;
+    text-transform: capitalize;
+    color: $primary-brand-color;
+  }
+
+  .contact-link-mail {
+    // margin-bottom: 48px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: $primary-text-color;
+  }
+
+  .mobile-contact-link {
+    /* display: block; */
+    color: $primary-text-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $pressed-color;
+    }
+  }
+
+  .mobile-list-icon-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile-link-icon-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: $primary-brand-color;
+    border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $pressed-color;
+    }
+  }
+
+  .icon-social {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  padding-top: 24px;
+  padding-bottom: 22px;
+  font-family: $secondary-font;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $primary-brand-color;
+
+  &-studio {
+    color: $secondary-text-color;
+  }
+}
