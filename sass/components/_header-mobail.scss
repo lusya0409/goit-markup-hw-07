@@ -74,7 +74,7 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
-    &-focus {
+    &:focus {
       background-color: $primary-brand-color;
     }
   }
@@ -127,12 +127,13 @@
 
   .contact-link-tel {
     display: block;
-    max-width: 353px;
-    width: 100%;
+    max-width: 100%;
+    // max-width: 353px;
+    // width: 100%;
 
     font-weight: 700;
     font-size: 36px;
-    @media screen and (max-width: 428px) {
+    @media screen and (max-width: 479px) {
       font-size: 28px;
       white-space: nowrap;
     }
@@ -143,7 +144,6 @@
   }
 
   .contact-link-mail {
-    // margin-bottom: 48px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -151,8 +151,6 @@
   }
 
   .mobile-contact-link {
-    /* display: block; */
-    color: $primary-text-color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,

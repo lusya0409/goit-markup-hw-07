@@ -1,8 +1,8 @@
 //@include имя Добавляем свойства записанные в mixin к селектору
 @mixin centeredFlex($type: flex) {
-    display: $type;
-    align-items: center;
-    justify-content: center;
+  display: $type;
+  align-items: center;
+  justify-content: center;
 }
 // p {
 //     @include centeredFlex();
@@ -31,3 +31,27 @@ $icons: 'facebook', 'github', 'linkedin', 'twitter';
 
 // }
 // @include generateIcons($icons);
+
+@mixin media($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+// @include media(768px) {
+//     max-width: 720px;
+// }
+
+// Для размещения картинок на странице, когда промежуток (gap: 24px) одинаковый
+// @mixin calc($count) {
+//   width: calc((100% - 24px * ($count - 1)) / $count);
+// }
+// 2- кол-во картинок в ряду
+// @include calc(2);
+
+// Для размещения картинок(т.п.) на странице, когда промежуток (gap) разный
+
+@mixin calc($count, $gap) {
+  width: calc((100% - $gap * ($count - 1)) / $count);
+}
+// @include calc(2, 24px);

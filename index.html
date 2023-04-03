@@ -196,28 +196,33 @@
           <h2 class="section-title">What are we doing</h2>
           <ul class="list section-list">
             <li class="doing-card">
-              <img
-                class="doing-photo"
-                src=".//images/doings/desktop.jpg"
-                alt="desktop"
-                width="360"
-              />
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="./images/doings/doing1-desktop-des@1x.webp 1x, /images/doings/doing1-desktop-des@2x.webp 2x" type="image/webp" >
+
+                <source media="(min-width: 1200px)" srcset="./images/doings/doing1-desktop-des@1x.jpg 1x, /images/doings/doing1-desktop-des@2x.jpg 2x" width="360" >
+                <img class="doing-photo" src="./images/doings/doing1-desktop-des@1x.jpg" alt="desktop" width="360" />
+
+              </picture>
             </li>
             <li class="doing-card">
-              <img
-                class="doing-photo"
-                src=".//images/doings/mobile.jpg"
-                alt="mobile"
-                width="360"
-              />
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="./images/doings/doing2-mobile-des@1x.webp 1x, /images/doings/doing2-mobile-des@2x.webp 2x"
+                  type="image/webp">
+                
+                <source media="(min-width: 1200px)"
+                  srcset="./images/doings/doing2-mobile-des@1x.jpg 1x, /images/doings/doing2-mobile-des@2x.jpg 2x" width="360">
+                <img class="doing-photo" src="./images/doings/doing2-mobile-des@1x.jpg" alt="mobile" width="360" />
+              </picture>
             </li>
             <li class="doing-card">
-              <img
-                class="doing-photo"
-                src=".//images/doings/adaptive.jpg"
-                alt="adaptive"
-                width="360"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/doings/doing3-adaptive-des@1x.webp 1x, ./images/doings/doing3-adaptive-des@2x.webp 2x," type="image/webp">
+                <source media="(min-width: 1200px)" srcset="./images/doings/doing3-adaptive-des@1x.jpg 1x, ./images/doings/doing3-adaptive-des@2x.jpg 2x" width="360">
+                <img class="doing-photo" src="./images/doings/doing3-adaptive-des@1x.jpg" alt="adaptive" width="360" />
+
+              </picture>
             </li>
           </ul>
         </div>
@@ -228,12 +233,12 @@
           <h2 class="section-title">Our Team</h2>
           <ul class="list section-list">
             <li class="item-team-card">
-              <img
-                class="team-photo"
-                src=".//images/team/mark-guerrero.jpg"
-                alt="Mark Guerrero"
-                width="264"
-              />
+              <picture>
+                <source srcset="./images/team/team1-mark-guerrero_@1x.webp 1x, ./images/team/team1-mark-guerrero_@2x.webp 2x" type="image/webp">
+                <source srcset="./images/team/team1-mark-guerrero_@1x.jpg 1x, ./images/team/team1-mark-guerrero_@2x.jpg 2x" width="264">
+                <img class="team-photo" src="./images/team/team1-mark-guerrero_@1x.jpg" alt="Mark Guerrero" width="264" />
+              </picture>
+
               <div class="team-card-content">
                 <h3 class="section-subtitle">Mark Guerrero</h3>
                 <p class="section-description">Product Designer</p>
@@ -245,7 +250,7 @@
                       aria-label="Instagram"
                     >
                       <svg class="icon-social">
-                        <use href=".//images/icons.svg#icon-instagram"></use>
+                        <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
@@ -256,7 +261,7 @@
                       aria-label="Twitter"
                     >
                       <svg class="icon-social">
-                        <use href=".//images/icons.svg#icon-twitter"></use>
+                        <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
@@ -267,7 +272,7 @@
                       aria-label="Facebook"
                     >
                       <svg class="icon-social">
-                        <use href=".//images/icons.svg#icon-facebook"></use>
+                        <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
@@ -278,7 +283,7 @@
                       aria-label="Linkedin"
                     >
                       <svg class="icon-social">
-                        <use href=".//images/icons.svg#icon-linkedin"></use>
+                        <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -286,12 +291,18 @@
               </div>
             </li>
             <li class="item-team-card">
-              <img
-                class="team-photo"
-                src=".//images/team/tom-ford.jpg"
-                alt="Tom Ford"
-                width="264"
-              />
+              <picture>
+                <source srcset="./images/team/team2-tom-ford_@1x.webp 1x, ./images/team/team2-tom-ford_@2x.webp 2x" type="image/webp">
+                <source srcset="./images/team/team2-tom-ford_@1x.jpg 1x, ./images/team/team2-tom-ford_@2x.jpg 2x" width="264">
+
+                <img
+                  class="team-photo"
+                  src="./images/team/team2-tom-ford_@1x.jpg"
+                  alt="Tom Ford"
+                  width="264"
+                />
+              </picture>
+
               <div class="team-card-content">
                 <h3 class="section-subtitle">Tom Ford</h3>
                 <p class="section-description">Frontend Developer</p>
@@ -303,7 +314,7 @@
                       aria-label="Instagram"
                     >
                       <svg class="icon-social">
-                        <use href=".//images/icons.svg#icon-instagram"></use>
+                        <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
@@ -314,7 +325,7 @@
                       aria-label="Twitter"
                     >
                       <svg class="icon-social">
-                        <use href=".//images/icons.svg#icon-twitter"></use>
+                        <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
@@ -325,7 +336,7 @@
                       aria-label="Facebook"
                     >
                       <svg class="icon-social">
-                        <use href=".//images/icons.svg#icon-facebook"></use>
+                        <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
@@ -336,7 +347,7 @@
                       aria-label="Linkedin"
                     >
                       <svg class="icon-social">
-                        <use href=".//images/icons.svg#icon-linkedin"></use>
+                        <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -344,12 +355,18 @@
               </div>
             </li>
             <li class="item-team-card">
-              <img
-                class="team-photo"
-                src=".//images/team/camila-garcia.jpg"
-                alt="Camila Garcia"
-                width="264"
-              />
+              <picture>
+                <source srcset="./images/team/team3-camila-garcia_@1x.webp 1x, ./images/team/team3-camila-garcia_@2x.webp 2x" type="image/webp">
+                <source srcset="./images/team/team3-camila-garcia_@1x.jpg 1x, ./images/team/team3-camila-garcia_@2x.jpg 2x" width="264">
+
+                <img
+                  class="team-photo"
+                  src="./images/team/team3-camila-garcia_@1x.jpg"
+                  alt="Camila Garcia"
+                  width="264"
+                />
+              </picture>
+
               <div class="team-card-content">
                 <h3 class="section-subtitle">Camila Garcia</h3>
                 <p class="section-description">Marketing</p>
@@ -361,7 +378,7 @@
                       aria-label="Instagram"
                     >
                       <svg class="icon-social">
-                        <use href=".//images/icons.svg#icon-instagram"></use>
+                        <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
@@ -372,7 +389,7 @@
                       aria-label="Twitter"
                     >
                       <svg class="icon-social">
-                        <use href=".//images/icons.svg#icon-twitter"></use>
+                        <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
@@ -383,7 +400,7 @@
                       aria-label="Facebook"
                     >
                       <svg class="icon-social">
-                        <use href=".//images/icons.svg#icon-facebook"></use>
+                        <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
@@ -394,7 +411,7 @@
                       aria-label="Linkedin"
                     >
                       <svg class="icon-social">
-                        <use href=".//images/icons.svg#icon-linkedin"></use>
+                        <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -402,12 +419,18 @@
               </div>
             </li>
             <li class="item-team-card">
-              <img
-                class="team-photo"
-                src=".//images/team/daniel-wilson.jpg"
-                alt="Daniel Wilson"
-                width="264"
-              />
+              <picture>
+                <source srcset="./images/team/team4-daniel-wilson_@1x.webp 1x, ./images/team/team4-daniel-wilson_@2x.webp 2x" type="image/webp">
+                <source srcset="./images/team/team4-daniel-wilson_@1x.jpg 1x, ./images/team/team4-daniel-wilson_@2x.jpg 2x" width="264">
+
+                <img
+                  class="team-photo"
+                  src="./images/team/team4-daniel-wilson_@1x.jpg"
+                  alt="Daniel Wilson"
+                  width="264"
+                />
+              </picture>
+
               <div class="team-card-content">
                 <h3 class="section-subtitle">Daniel Wilson</h3>
                 <p class="section-description">UI Designer</p>
@@ -419,7 +442,7 @@
                       aria-label="Instagram"
                     >
                       <svg class="icon-social">
-                        <use href=".//images/icons.svg#icon-instagram"></use>
+                        <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
@@ -430,7 +453,7 @@
                       aria-label="Twitter"
                     >
                       <svg class="icon-social">
-                        <use href=".//images/icons.svg#icon-twitter"></use>
+                        <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
@@ -441,7 +464,7 @@
                       aria-label="Facebook"
                     >
                       <svg class="icon-social">
-                        <use href=".//images/icons.svg#icon-facebook"></use>
+                        <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
@@ -452,7 +475,7 @@
                       aria-label="Linkedin"
                     >
                       <svg class="icon-social">
-                        <use href=".//images/icons.svg#icon-linkedin"></use>
+                        <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -470,42 +493,42 @@
             <li class="item-icon-client">
               <a href="" class="link-icon-client">
                 <svg class="icon-client" width="41" height="47">
-                  <use href=".//images/icons.svg#icon-client1"></use>
+                  <use href="./images/icons.svg#icon-client1"></use>
                 </svg>
               </a>
             </li>
             <li class="item-icon-client">
               <a href="" class="link-icon-client">
                 <svg class="icon-client" width="40" height="52">
-                  <use href=".//images/icons.svg#icon-client2"></use>
+                  <use href="./images/icons.svg#icon-client2"></use>
                 </svg>
               </a>
             </li>
             <li class="item-icon-client">
               <a href="" class="link-icon-client">
                 <svg class="icon-client" width="44" height="41">
-                  <use href=".//images/icons.svg#icon-client3"></use>
+                  <use href="./images/icons.svg#icon-client3"></use>
                 </svg>
               </a>
             </li>
             <li class="item-icon-client">
               <a href="" class="link-icon-client">
                 <svg class="icon-client" width="84" height="41">
-                  <use href=".//images/icons.svg#icon-client4"></use>
+                  <use href="./images/icons.svg#icon-client4"></use>
                 </svg>
               </a>
             </li>
             <li class="item-icon-client">
               <a href="" class="link-icon-client">
                 <svg class="icon-client" width="63" height="45">
-                  <use href=".//images/icons.svg#icon-client5"></use>
+                  <use href="./images/icons.svg#icon-client5"></use>
                 </svg>
               </a>
             </li>
             <li class="item-icon-client">
               <a href="" class="link-icon-client">
                 <svg class="icon-client" width="94" height="44">
-                  <use href=".//images/icons.svg#icon-client6"></use>
+                  <use href="./images/icons.svg#icon-client6"></use>
                 </svg>
               </a>
             </li>
@@ -532,28 +555,28 @@
             <li class="item-icon-social">
               <a href="" class="link link-icon-social" aria-label="Instagram">
                 <svg class="icon-social">
-                  <use href=".//images/icons.svg#icon-instagram"></use>
+                  <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="item-icon-social">
               <a href="" class="link link-icon-social" aria-label="Twitter">
                 <svg class="icon-social">
-                  <use href=".//images/icons.svg#icon-twitter"></use>
+                  <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="item-icon-social">
               <a href="" class="link link-icon-social" aria-label="Facebook">
                 <svg class="icon-social">
-                  <use href=".//images/icons.svg#icon-facebook"></use>
+                  <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="item-icon-social">
               <a href="" class="link link-icon-social" aria-label="Linkedin">
                 <svg class="icon-social">
-                  <use href=".//images/icons.svg#icon-linkedin"></use>
+                  <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
@@ -574,7 +597,7 @@
           <button type="submit" class="footer-form-submit">
             Subscribe
             <svg class="footer-form-btn-icon" width="24" height="24">
-              <use href=".//images/icons.svg#icon-click"></use>
+              <use href="./images/icons.svg#icon-click"></use>
             </svg>
           </button>
         </form>
