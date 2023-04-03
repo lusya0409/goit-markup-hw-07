@@ -4,17 +4,37 @@
   align-items: center;
   justify-content: center;
 }
-// p {
 //     @include centeredFlex();
-// }
 
-// div {
-//     @include centeredFlex();
+@mixin retina2x {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    @content;
+  }
+}
+// @include retina2x();
+
+// @mixin mobile {
+//   @media screen and (max-width: 767px) {
+//     @content;
+//   }
+// }
+// @include mobile();
+// @mixin tablet {
+//   @media screen and (min-width: 768px) {
+//     @content;
+//   }
+// }
+// @mixin desktop {
+//   @media screen and (min-width: 1200px) {
+//     @content;
+//   }
 // }
 
 //Для каждого значения в списке применить следующие значения
 
-$icons: 'facebook', 'github', 'linkedin', 'twitter';
+// $icons: 'facebook', 'github', 'linkedin', 'twitter';
 // @each $iconName in $icons {
 //     .icon-#{$iconName} {
 //         background-image: url("../../images/#{$iconName}.svg");
@@ -32,11 +52,11 @@ $icons: 'facebook', 'github', 'linkedin', 'twitter';
 // }
 // @include generateIcons($icons);
 
-@mixin media($size) {
-  @media screen and (min-width: $size) {
-    @content;
-  }
-}
+// @mixin media($size) {
+//   @media screen and (min-width: $size) {
+//     @content;
+//   }
+// }
 
 // @include media(768px) {
 //     max-width: 720px;
@@ -51,7 +71,7 @@ $icons: 'facebook', 'github', 'linkedin', 'twitter';
 
 // Для размещения картинок(т.п.) на странице, когда промежуток (gap) разный
 
-@mixin calc($count, $gap) {
-  width: calc((100% - $gap * ($count - 1)) / $count);
-}
+// @mixin calc($count, $gap) {
+//   width: calc((100% - $gap * ($count - 1)) / $count);
+// }
 // @include calc(2, 24px);

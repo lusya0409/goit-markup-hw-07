@@ -17,7 +17,6 @@
   column-gap: 24px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 552px;
-    //   justify-content: flex-start;
     flex-basis: calc((100% - 24px) / 2);
 
     justify-content: flex-start;
@@ -25,15 +24,8 @@
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
     gap: 0;
-
     justify-content: flex-start;
-
-    // row-gap: 0;
-    // column-gap: 0;
   }
-  // display: flex;
-  // justify-content: flex-start;
-  // flex-wrap: wrap;
 }
 
 .footer-container-logo {
@@ -92,9 +84,6 @@
 
 .footer {
   .list-icon-social {
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
     gap: 16px;
     margin-top: 0;
     @media screen and (min-width: 768px) {
@@ -192,7 +181,6 @@
 }
 
 .footer-form-submit {
-  //   margin-left: 24px;
   padding: 8px 24px;
 
   display: flex;

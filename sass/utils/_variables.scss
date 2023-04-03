@@ -1,7 +1,5 @@
-$primary-font: 'Roboto',
-sans-serif;
-$secondary-font: 'Raleway',
-sans-serif;
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'Raleway', sans-serif;
 
 $primary-brand-color: #4d5ae5;
 $pressed-color: #404bbf;
@@ -22,3 +20,8 @@ $border-work-link-pressed-color: 1px solid #f4f4fd;
 $border-work-link-default-color: 1px solid #e7e9fc;
 $border-close-modal-btn: 1px solid rgba(0, 0, 0, 0.1);
 $close-modal-background-color: #e7e9fc;
+$gradient: linear-gradient(
+  to right,
+  rgba(46, 47, 66, 0.7),
+  rgba(46, 47, 66, 0.7)
+);
