@@ -25,9 +25,6 @@
 
   // }
 
-  @include mobile {
-  }
-
   @media screen and (max-width: 767px) {
     background-image: $gradient,
       url('../../images/hero/people-office-mob@1x.jpg');
