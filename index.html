@@ -18,10 +18,9 @@
     <link rel="stylesheet" href="./dist/css/main.min.css" />
   </head>
   <body>
-
     <!-- Header -->
-     <header class="page-header">
-       <div class="container page-header-container">
+    <header class="page-header">
+      <div class="container page-header-container">
         <nav class="page-nav">
           <a class="logo link" href="./index.html"
             >Web<span class="logo-studio">Studio</span></a
@@ -39,7 +38,9 @@
           </ul>
         </nav>
         <button class="mobile-menu-open js-open-menu" type="button">
-          <svg class="mobile-menu-icon" width="32" height="22"><use href="./images/icons.svg#icon-menu-hamburger"></use></svg>
+          <svg class="mobile-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
         </button>
         <ul class="contact list">
           <li class="contact-item">
@@ -64,10 +65,14 @@
           </button>
           <ul class="mobile-menu-list list">
             <li class="mobile-menu-item">
-              <a class="mobile-menu-link current link" href="./index.html">Studio</a>
+              <a class="mobile-menu-link current link" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="mobile-menu-item">
-              <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+              <a class="mobile-menu-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
             </li>
             <li class="mobile-menu-item">
               <a class="mobile-menu-link link" href="">Contacts</a>
@@ -76,49 +81,72 @@
           <div class="mobile-wraper-lists-media">
             <ul class="mobile-contact list">
               <li class="mobile-contact-item">
-                <a class="mobile-contact-link contact-link-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                <a
+                  class="mobile-contact-link contact-link-tel link"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
               </li>
-            
+
               <li class="mobile-contact-item">
-                <a class="mobile-contact-link contact-link-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a
+                  class="mobile-contact-link contact-link-mail link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
             </ul>
-            
+
             <ul class="list mobile-list-icon-social">
               <li class="mobile-item-icon-social">
-                <a href="" class="link mobile-link-icon-social" aria-label="Instagram">
+                <a
+                  href=""
+                  class="link mobile-link-icon-social"
+                  aria-label="Instagram"
+                >
                   <svg class="icon-social">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="mobile-item-icon-social">
-                <a href="" class="link mobile-link-icon-social" aria-label="Twitter">
+                <a
+                  href=""
+                  class="link mobile-link-icon-social"
+                  aria-label="Twitter"
+                >
                   <svg class="icon-social">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="mobile-item-icon-social">
-                <a href="" class="link mobile-link-icon-social" aria-label="Facebook">
+                <a
+                  href=""
+                  class="link mobile-link-icon-social"
+                  aria-label="Facebook"
+                >
                   <svg class="icon-social">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="mobile-item-icon-social">
-                <a href="" class="link mobile-link-icon-social" aria-label="Linkedin">
+                <a
+                  href=""
+                  class="link mobile-link-icon-social"
+                  aria-label="Linkedin"
+                >
                   <svg class="icon-social">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
               </li>
             </ul>
-
           </div>
         </div>
       </div>
-    </header> 
+    </header>
 
     <!-- Main -->
     <main>
@@ -197,37 +225,91 @@
           <ul class="list section-list">
             <li class="doing-card">
               <picture>
-                <source media="(min-width: 1200px)"
-                  srcset="./images/doings/doing1-desktop-des@1x.webp 1x, ./images/doings/doing1-desktop-des@2x.webp 2x" type="image/webp" >
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/doings/doing1-desktop-des@1x.webp 1x,
+                    ./images/doings/doing1-desktop-des@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
 
-                <source media="(min-width: 1200px)" srcset="./images/doings/doing1-desktop-des@1x.jpg 1x, ./images/doings/doing1-desktop-des@2x.jpg 2x" type="image/jpeg" width="360" >
-                <img class="doing-photo" src="./images/doings/doing1-desktop-des@1x.jpg" alt="desktop" width="360" />
-
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/doings/doing1-desktop-des@1x.jpg 1x,
+                    ./images/doings/doing1-desktop-des@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  width="360"
+                />
+                <img
+                  class="doing-photo"
+                  src="./images/doings/doing1-desktop-des@1x.jpg"
+                  alt="desktop"
+                  width="360"
+                />
               </picture>
             </li>
             <li class="doing-card">
               <picture>
-                <source media="(min-width: 1200px)"
-                  srcset="./images/doings/doing2-mobile-des@1x.webp 1x, ./images/doings/doing2-mobile-des@2x.webp 2x"
-                  type="image/webp">
-                
-                <source media="(min-width: 1200px)"
-                  srcset="./images/doings/doing2-mobile-des@1x.jpg 1x, ./images/doings/doing2-mobile-des@2x.jpg 2x" type="image/jpeg" width="360">
-                <img class="doing-photo" src="./images/doings/doing2-mobile-des@1x.jpg" alt="mobile" width="360" />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/doings/doing2-mobile-des@1x.webp 1x,
+                    ./images/doings/doing2-mobile-des@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/doings/doing2-mobile-des@1x.jpg 1x,
+                    ./images/doings/doing2-mobile-des@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  width="360"
+                />
+                <img
+                  class="doing-photo"
+                  src="./images/doings/doing2-mobile-des@1x.jpg"
+                  alt="mobile"
+                  width="360"
+                />
               </picture>
             </li>
             <li class="doing-card">
               <picture>
-                <source media="(min-width: 1200px)" srcset="./images/doings/doing3-adaptive-des@1x.webp 1x, ./images/doings/doing3-adaptive-des@2x.webp 2x" type="image/webp">
-                <source media="(min-width: 1200px)" srcset="./images/doings/doing3-adaptive-des@1x.jpg 1x, ./images/doings/doing3-adaptive-des@2x.jpg 2x" type="image/jpeg" width="360">
-                <img class="doing-photo" src="./images/doings/doing3-adaptive-des@1x.jpg" alt="adaptive" width="360" />
-
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/doings/doing3-adaptive-des@1x.webp 1x,
+                    ./images/doings/doing3-adaptive-des@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/doings/doing3-adaptive-des@1x.jpg 1x,
+                    ./images/doings/doing3-adaptive-des@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  width="360"
+                />
+                <img
+                  class="doing-photo"
+                  src="./images/doings/doing3-adaptive-des@1x.jpg"
+                  alt="adaptive"
+                  width="360"
+                />
               </picture>
             </li>
           </ul>
         </div>
       </section>
-      
+
       <!-- Section Team -->
       <section class="section-team section">
         <div class="container">
@@ -235,9 +317,27 @@
           <ul class="list section-list">
             <li class="item-team-card">
               <picture>
-                <source srcset="./images/team/team1-mark-guerrero_@1x.webp 1x, ./images/team/team1-mark-guerrero_@2x.webp 2x" type="image/webp">
-                <source srcset="./images/team/team1-mark-guerrero_@1x.jpg 1x, ./images/team/team1-mark-guerrero_@2x.jpg 2x" type="image/jpeg" width="264">
-                <img class="team-photo" src="./images/team/team1-mark-guerrero_@1x.jpg" alt="Mark Guerrero" width="264" />
+                <source
+                  srcset="
+                    ./images/team/team1-mark-guerrero_@1x.webp 1x,
+                    ./images/team/team1-mark-guerrero_@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/team1-mark-guerrero_@1x.jpg 1x,
+                    ./images/team/team1-mark-guerrero_@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  width="264"
+                />
+                <img
+                  class="team-photo"
+                  src="./images/team/team1-mark-guerrero_@1x.jpg"
+                  alt="Mark Guerrero"
+                  width="264"
+                />
               </picture>
               <div class="team-card-content">
                 <h3 class="section-subtitle">Mark Guerrero</h3>
@@ -292,8 +392,21 @@
             </li>
             <li class="item-team-card">
               <picture>
-                <source srcset="./images/team/team2-tom-ford_@1x.webp 1x, ./images/team/team2-tom-ford_@2x.webp 2x" type="image/webp">
-                <source srcset="./images/team/team2-tom-ford_@1x.jpg 1x, ./images/team/team2-tom-ford_@2x.jpg 2x" type="image/jpeg" width="264">
+                <source
+                  srcset="
+                    ./images/team/team2-tom-ford_@1x.webp 1x,
+                    ./images/team/team2-tom-ford_@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/team2-tom-ford_@1x.jpg 1x,
+                    ./images/team/team2-tom-ford_@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  width="264"
+                />
 
                 <img
                   class="team-photo"
@@ -356,8 +469,21 @@
             </li>
             <li class="item-team-card">
               <picture>
-                <source srcset="./images/team/team3-camila-garcia_@1x.webp 1x, ./images/team/team3-camila-garcia_@2x.webp 2x" type="image/webp">
-                <source srcset="./images/team/team3-camila-garcia_@1x.jpg 1x, ./images/team/team3-camila-garcia_@2x.jpg 2x" type="image/jpeg" width="264">
+                <source
+                  srcset="
+                    ./images/team/team3-camila-garcia_@1x.webp 1x,
+                    ./images/team/team3-camila-garcia_@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/team3-camila-garcia_@1x.jpg 1x,
+                    ./images/team/team3-camila-garcia_@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  width="264"
+                />
 
                 <img
                   class="team-photo"
@@ -420,8 +546,21 @@
             </li>
             <li class="item-team-card">
               <picture>
-                <source srcset="./images/team/team4-daniel-wilson_@1x.webp 1x, ./images/team/team4-daniel-wilson_@2x.webp 2x" type="image/webp">
-                <source srcset="./images/team/team4-daniel-wilson_@1x.jpg 1x, ./images/team/team4-daniel-wilson_@2x.jpg 2x" type="image/jpeg" width="264">
+                <source
+                  srcset="
+                    ./images/team/team4-daniel-wilson_@1x.webp 1x,
+                    ./images/team/team4-daniel-wilson_@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/team4-daniel-wilson_@1x.jpg 1x,
+                    ./images/team/team4-daniel-wilson_@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  width="264"
+                />
 
                 <img
                   class="team-photo"
@@ -582,7 +721,7 @@
             </li>
           </ul>
         </div>
-        
+
         <form class="footer-form">
           <label class="footer-form-field">
             <span class="footer-form-input-desk">Subscribe</span>
@@ -612,7 +751,7 @@
             <use href=".//images/icons.svg#icon-close-modal"></use>
           </svg>
         </button>
-        
+
         <form class="modal-form">
           <p class="modal-form-text">
             Leave your contacts and we will call you back
